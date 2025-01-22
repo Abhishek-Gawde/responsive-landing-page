@@ -8,3 +8,93 @@ body, html {
     width: 100%;
     height: 100%;
 }
+
+.main {
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+.main img {
+    height: 500px;
+    position: relative;
+    z-index: 9;
+}
+
+.scroll-div {
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    /* height: 100px; */
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.scroll-div::-webkit-scrollbar {
+    display: none;
+}
+
+.scroll-div h1 {
+    display: inline-block;
+    font-size: 150px;
+    font-family: monospace;
+    margin-right: 25px;
+    letter-spacing: 6px;
+}
+
+/* second scroll div 2 */
+
+.scroll-div2 {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    z-index: 100;
+    /* height: 100px; */
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.scroll-div2::-webkit-scrollbar {
+    display: none;
+}
+
+.scroll-div2 h1 {
+    color: transparent;
+    display: inline-block;
+    font-size: 150px;
+    font-family: monospace;
+    margin-right: 25px;
+    letter-spacing: 6px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #000;
+}
+
+/* scroll-div 3 */
+
+.scroll-div3 {
+    position: absolute;
+    top: 60%;
+    width: 100%;
+    /* height: 100px; */
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.scroll-div3::-webkit-scrollbar {
+    display: none;
+}
+
+.scroll-div3 h1 {
+    display: inline-block;
+    font-size: 150px;
+    font-family: monospace;
+    margin-right: 25px;
+    letter-spacing: 6px;
+}
