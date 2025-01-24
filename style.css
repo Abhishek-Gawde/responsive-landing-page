@@ -25,6 +25,16 @@ body, html {
     z-index: 9;
 }
 
+.text {
+    font-size: 25px;
+    text-align: center;
+    width: 50%;    
+    position: absolute;
+    top: 15%;
+    z-index: 100;
+    text-transform: uppercase;
+}
+
 .scroll-div {
     position: absolute;
     top: 20%;
