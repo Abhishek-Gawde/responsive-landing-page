@@ -135,11 +135,66 @@ body, html {
     }
 }
 
-@keyframes scroll1 {
-    0% {
-        transform: translateX(0);
+/* responsive  */
+
+@media (max-width: 500px) {
+    .text {
+        font-size: 15px;
+        text-align: center;
+        width: 80%;  
+        top: 22%;
+        color: rgb(255, 208, 79);        
     }
-    100% {
-        transform: translateX(calc(-100% - 30px));
+
+    .main img {
+        height: 350px;
+        position: relative;        
     }
+
+    
+/* scroll div one */
+
+.scroll-div {
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    /* height: 100px; */      
 }
+
+.scroll-div h1 {
+    display: inline-block;
+    font-size: 80px;    
+    margin-right: 25px;      
+}
+
+/* scroll div two */
+
+.scroll-div2 {
+    position: absolute;
+    top: 40%    
+    /* height: 100px; */      
+}
+
+.scroll-div2 h1 {
+    display: inline-block;
+    font-size: 80px;    
+    margin-right: 25px;      
+}
+
+/* scroll div three */
+
+.scroll-div3 {
+    position: absolute;
+    top: 55%;    
+    /* height: 100px; */      
+}
+
+.scroll-div3 h1 {
+    display: inline-block;
+    font-size: 80px;    
+    margin-right: 25px;      
+}
+
+
+}
+
