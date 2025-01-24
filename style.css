@@ -35,6 +35,8 @@ body, html {
     text-transform: uppercase;
 }
 
+/* scroll div one */
+
 .scroll-div {
     position: absolute;
     top: 20%;
@@ -42,7 +44,7 @@ body, html {
     /* height: 100px; */
     white-space: nowrap;
     overflow-x: auto;
-    overflow-y: hidden;
+    overflow-y: hidden;    
 }
 
 .scroll-div::-webkit-scrollbar {
@@ -55,6 +57,10 @@ body, html {
     font-family: monospace;
     margin-right: 25px;
     letter-spacing: 6px;
+    animation-name: scroll;
+    animation-duration: 1s;
+    animation-timing-function: linear;    
+    animation-iteration-count: infinite;    
 }
 
 /* second scroll div 2 */
@@ -83,6 +89,11 @@ body, html {
     letter-spacing: 6px;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #000;
+    animation-name: scroll;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+    animation-iteration-count: infinite; 
 }
 
 /* scroll-div 3 */
@@ -107,4 +118,28 @@ body, html {
     font-family: monospace;
     margin-right: 25px;
     letter-spacing: 6px;
+    animation-name: scroll;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite; 
+}
+
+/* animation part  */
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-100% - 30px));
+    }
+}
+
+@keyframes scroll1 {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-100% - 30px));
+    }
 }
